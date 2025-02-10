@@ -1,0 +1,79 @@
+
+What are Microservices?
+Last Updated : 10 Feb, 2025
+
+Microservices are an architectural approach to developing software applications as a collection of small, independent services that communicate with each other over a network. Instead of building a monolithic application where all the functionality is tightly integrated into a single codebase, microservices break down the application into smaller, loosely coupled services.
+
+Microservices
+Microservices are small, loosely coupled services that are designed to perform a specific business function. Each microservice can be developed, deployed, and scaled independently. This architecture allows you to take a large monolithic application and decompose it into small manageable components/services, making it the building block of modern applications.
+
+How do Microservices Work?
+Microservices break complex applications into smaller, independent services that work together, enhancing scalability and maintenance. Each microservice handles a particular business feature, like user authentication or product management, allowing for specialized development. Services interact via APIs, facilitating standardized information exchange and integration. Different technologies can be used for each service, enabling teams to select the best tools for their needs. Microservices can be updated independently, reducing risks during changes and enhancing system resilience.
+
+Components of Microservices Architecture:
+1. Microservices: Small, loosely coupled services that handle specific business functions.
+2. API Gateway: A central entry point for external clients that manages requests and routes them to the appropriate microservice.
+3. Service Registry and Discovery: Keeps track of locations and addresses of all microservices, enabling them to communicate with each other.
+4. Load Balancer: Distributes incoming traffic across multiple service instances.
+5. Containerization: Docker encapsulates microservices and their dependencies, while Kubernetes manages their deployment and scaling.
+6. Event Bus/Message Broker: Facilitates communication between microservices, allowing asynchronous interaction.
+7. Database per Microservice: Each microservice typically has its own database, promoting data autonomy and independent scaling.
+8. Fault Tolerance and Resilience Components: Mechanisms like circuit breakers ensure that the system handles failures gracefully.
+
+Design Patterns for Microservices:
+1. API Gateway Pattern
+2. Service Registry Pattern
+3. Circuit Breaker Pattern
+4. Saga Pattern
+5. Event Sourcing Pattern
+6. Strangler Fig Pattern
+7. Bulkhead Pattern
+8. API Composition Pattern
+9. CQRS Design Pattern
+
+Anti-Patterns in Microservices:
+1. Sharing a single centralized database.
+2. Excessive communication between microservices.
+3. Creating too many microservices for minor functions.
+4. Undefined service boundaries.
+5. Neglecting security issues.
+
+Real-World Example of Microservices:
+Consider Amazon’s e-commerce platform, which uses microservices like:
+1. User Service
+2. Search Service
+3. Catalog Service
+4. Cart Service
+5. Order Taking Service
+6. Payment Service
+7. Logistics Service
+8. Notification Service
+
+Microservices vs. Monolithic Architecture:
+Microservices provide flexibility, scalability, and easier maintenance, while monolithic applications involve a single, tightly integrated codebase that is harder to scale and maintain.
+
+Benefits of Microservices Architecture:
+1. Faster development and deployment cycles.
+2. Teams can work on different microservices simultaneously.
+3. Scalable and resilient system architecture.
+4. Flexibility in adopting new technologies.
+
+Challenges of Microservices Architecture:
+1. Complexity in service communication and network latency.
+2. Difficulty in maintaining consistent data across services.
+3. Distributed transactions can be complicated.
+
+Migrating from Monolithic to Microservices:
+Key steps for migration include:
+1. Evaluate current monolithic application.
+2. Break down the application into business functions.
+3. Implement the Strangler Pattern for gradual migration.
+4. Set up clear APIs for communication.
+5. Create CI/CD pipelines for automated deployment.
+6. Implement service discovery and centralized logging.
+
+Service-Oriented Architecture vs. Microservices:
+Microservices are smaller, focused, and independent, whereas SOA involves larger, more comprehensive services with a shared database.
+
+Conclusion:
+Microservices are essential for modern applications. Understanding their architecture, patterns, and real-life applications will empower you to build scalable, flexible, and resilient systems. Hands-on experience is key to mastering microservices.
